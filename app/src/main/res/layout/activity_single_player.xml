@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_shape">
+
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/tvPlayer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="casual"
+            android:gravity="center"
+            android:text="Player 0:"
+            android:textColor="@color/colorWhite"
+            android:textSize="32sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvOpponent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="casual"
+            android:text="0 Opponent"
+            android:textColor="@color/colorWhite"
+            android:textSize="32sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <TableLayout
+        android:id="@+id/table"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:stretchColumns="*">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:weightSum="3">
+
+            <Button
+                android:id="@+id/sbtn1"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_weight="1"
+                android:background="@drawable/cell_shape"
+                android:padding="25dp"
+                android:textColor="@color/colorWhite"
+                android:textSize="48sp" />
+
+            <Button
+                android:id="@+id/sbtn2"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_weight="1"
+                android:background="@drawable/cell_shape"
+                android:padding="25dp"
+                android:textColor="@color/colorWhite"
+                android:textSize="48sp" />
+
+            <Button
+                android:id="@+id/sbtn3"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_weight="1"
+                android:background="@drawable/cell_shape"
+                android:padding="25dp"
+                android:textColor="@color/colorWhite"
+                android:textSize="48sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="3">
+
+            <Button
+                android:id="@+id/sbtn4"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_weight="1"
+                android:background="@drawable/cell_shape"
+                android:padding="25dp"
+                android:textColor="@color/colorWhite"
+                android:textSize="48sp" />
+
+            <Button
+                android:id="@+id/sbtn5"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_weight="1"
+                android:background="@drawable/cell_shape"
+                android:padding="25dp"
+                android:textColor="@color/colorWhite"
+                android:textSize="48sp" />
+
+            <Button
+                android:id="@+id/sbtn6"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_weight="1"
+                android:background="@drawable/cell_shape"
+                android:padding="25dp"
+                android:textColor="@color/colorWhite"
+                android:textSize="48sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="3">
+
+            <Button
+                android:id="@+id/sbtn7"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_weight="1"
+                android:background="@drawable/cell_shape"
+                android:padding="25dp"
+                android:textColor="@color/colorWhite"
+                android:textSize="48sp" />
+
+            <Button
+                android:id="@+id/sbtn8"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_weight="1"
+                android:background="@drawable/cell_shape"
+                android:padding="25dp"
+                android:textColor="@color/colorWhite"
+                android:textSize="48sp" />
+
+            <Button
+                android:id="@+id/sbtn9"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_weight="1"
+                android:background="@drawable/cell_shape"
+                android:padding="25dp"
+                android:textColor="@color/colorWhite"
+                android:textSize="48sp" />
+
+        </TableRow>
+
+
+    </TableLayout>
+
+    <ImageView
+        android:id="@+id/imgAgain1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center|bottom"
+        android:layout_marginBottom="80dp"
+        android:contentDescription="Repeating the game"
+        android:rotation="-90"
+        android:scaleType="center"
+        android:src="@drawable/ic_repeat" />
+
+
+</FrameLayout>
